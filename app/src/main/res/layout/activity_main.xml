@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:padding="30dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.tbreminder.source.MainActivity">
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextB"
+        android:text="TBReminder"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp"
+        android:textColor="@color/colorTextB"
+        android:text="Masuk Sebagai :"/>
+    <Button
+        android:id="@+id/btnA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBtnFirst"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorTextA"
+        android:text="PASIEN"/>
+    <Button
+        android:id="@+id/btnB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBtnFirst"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorTextA"
+        android:text="DOKTER"/>
+    <Button
+        android:id="@+id/btnC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBtnFirst"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorTextA"
+        android:text="PETUGAS"/>
+
+</LinearLayout>
