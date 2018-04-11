@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".auth.Login" android:theme="@style/AppTheme.Cust" android:configChanges="orientation" android:screenOrientation="portrait" android:noHistory="true"/>
+        <activity android:name=".module.Home" android:theme="@style/AppTheme.Cust" android:configChanges="orientation" android:screenOrientation="portrait" android:noHistory="true"/>
     </application>
 
 </manifest>

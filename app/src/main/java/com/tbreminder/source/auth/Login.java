@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.tbreminder.source.MainActivity;
 import com.tbreminder.source.R;
+import com.tbreminder.source.module.Home;
 
 /**
  * Created by Chandra on 08/04/2018.
@@ -27,7 +28,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
         Bundle bundle = getIntent().getExtras();
-        String type = bundle.getString("type");
+        final String type = bundle.getString("type");
         title = (TextView) findViewById(R.id.titleLogin);
         title.setText("Login "+type);
         username = (EditText) findViewById(R.id.username);
@@ -41,6 +42,15 @@ public class Login extends AppCompatActivity {
             public void onClick(View v) {
                 username.setText("");
                 password.setText("");
+            }
+        });
+        btnB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, Home.class);
+                intent.putExtra("type",type);
+                startActivity(intent);
+                finish();
             }
         });
     }

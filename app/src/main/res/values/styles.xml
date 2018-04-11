@@ -13,4 +13,13 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="ThemeToolbar" >
+        <item name="android:listDivider">@color/colorTh</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColorSecondary">@color/colorTh</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
